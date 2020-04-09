@@ -6,4 +6,4 @@ for example planet sizes, planet types, ammount of planets and more.
  
  More information: 
  
- https://sweck.de/ProceduralUniverse/
+ https://sweck.de/ProceduralUniverse
