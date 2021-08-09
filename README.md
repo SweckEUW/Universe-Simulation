@@ -2,4 +2,4 @@ I created this software together with 3 fellow students for a Computer Graphics 
  
  More information: 
  
- https://sweck.de/ProceduralUniverse
+https://sweck.de/UniverseSimulation/
