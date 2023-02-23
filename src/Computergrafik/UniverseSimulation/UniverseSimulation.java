@@ -48,7 +48,7 @@ public class UniverseSimulation implements GLEventListener {
 	private Matrix4f projectionMatrix;
 	private SkyBox skyBox;
 	private SkyBoxShader skyBoxShader;
-	private UniverseUserInterface userInterface;
+	// private UniverseUserInterface userInterface;
 	
 	public UniverseSimulation(JFrame mainFrame,ArrayList<PlanetData> data) {
 		this.mainFrame = mainFrame;
@@ -79,7 +79,7 @@ public class UniverseSimulation implements GLEventListener {
 		for (Planet planet : Planet.getAllPlanets()) 
 			renderer.render(planet, planetShader);
 	
-		camera.update(userInterface);
+		camera.update();
 		
 		MousePicker.update();
 	}	
@@ -116,7 +116,7 @@ public class UniverseSimulation implements GLEventListener {
 		
 		MousePicker.initMousePicker(camera, projectionMatrix, Planet.getAllPlanets());
 		
-		userInterface=new UniverseUserInterface(mainPane,mainFrame,camera);
+		// userInterface = new UniverseUserInterface(mainPane,mainFrame,camera);
 		
 		mainFrame.getContentPane().remove(0);
 		mainFrame.revalidate();

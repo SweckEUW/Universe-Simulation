@@ -4,7 +4,7 @@ import com.jogamp.opengl.awt.GLCanvas;
 
 import Computergrafik.Engine.Core.Math.Matrix4f;
 import Computergrafik.Engine.Planet.Core.Planet;
-import Computergrafik.UniverseSimulation.UniverseUserInterface;
+// import Computergrafik.UniverseSimulation.UniverseUserInterface;
 
 /**
  * 
@@ -79,11 +79,12 @@ public class Camera {
 	 * @param userInterface
 	 * 			-userInterface to add or remove elements when a player clicks on a planet
 	 */
-	public void update(UniverseUserInterface userInterface) {
+	// public void update(UniverseUserInterface userInterface) {
+	public void update() {
 		//if mouse got clicked check if the player hovers over a planet
 		if (mouseGotClicked) {
 			mouseGotClicked=false;
-			checkIfPlanetGotClicked(userInterface);	
+			checkIfPlanetGotClicked();	
 		}
 		
 		//update look at planet mode if enabled
@@ -105,11 +106,12 @@ public class Camera {
 	 * @param userInterface
 	 * 		-userInterface to add or remove elements when a player clicks on a planet
 	 */
-	private void checkIfPlanetGotClicked(UniverseUserInterface userInterface) {
+	// private void checkIfPlanetGotClicked(UniverseUserInterface userInterface) {
+	private void checkIfPlanetGotClicked() {
 		for (int i = 0; i < Planet.getAllPlanets().size(); i++) 
 			if (Planet.getAllPlanets().get(i).isSelected()) {
 				LookAtPlanet.initZoomOnPlanet( Planet.getAllPlanets().get(i), this);		
-				userInterface.addPlanetUI( Planet.getAllPlanets().get(i));	
+				// userInterface.addPlanetUI( Planet.getAllPlanets().get(i));	
 				for (Planet planet :  Planet.getAllPlanets()) {
 					planet.useNormalColor();
 					for (int k = 0; k < planet.getPlanetParts().size(); k++) 

@@ -9,7 +9,7 @@ import Computergrafik.Engine.Core.Math.Vector2f;
 import Computergrafik.Engine.Core.Math.Vector3f;
 import Computergrafik.Engine.Core.Math.Vector4f;
 import Computergrafik.Engine.Planet.Core.Planet;
-import Computergrafik.UniverseSimulation.UniverseUserInterface;
+// import Computergrafik.UniverseSimulation.UniverseUserInterface;
 
 /**
  * The MousePicker handles the calculation of a 3D ray based on the mouse coordinates. It also checks for intersections between every planet in the universe.
@@ -52,7 +52,7 @@ public class MousePicker {
 				if (checkIntersection(planets.get(i))) {
 					planets.get(i).setIsSelected(true);
 					foundPlanet=true;
-					UniverseUserInterface.changePlanetName(planets.get(i).getName());
+					// UniverseUserInterface.changePlanetName(planets.get(i).getName());
 					i=planets.size();
 				}else {
 					planets.get(i).setIsSelected(false);	
@@ -62,7 +62,7 @@ public class MousePicker {
 			//change current planet name to null
 			if (!foundPlanet) {
 				foundPlanet=false;
-				UniverseUserInterface.changePlanetName("");
+				// UniverseUserInterface.changePlanetName("");
 			}
 			
 		}
