@@ -57,7 +57,7 @@ public class DemoUniverse implements GLEventListener {
 	private Matrix4f projectionMatrix;
 	private SkyBox skyBox;
 	private SkyBoxShader skyBoxShader;
-	// private UniverseUserInterface userInterface;
+	private UniverseUserInterface userInterface;
 	
 	
 	public DemoUniverse(JFrame mainFrame) {
@@ -139,7 +139,7 @@ public class DemoUniverse implements GLEventListener {
 		
 		MousePicker.initMousePicker(camera, projectionMatrix, Planet.getAllPlanets());
 		
-		// userInterface=new UniverseUserInterface(mainPane,mainFrame,camera);
+		userInterface = new UniverseUserInterface(mainPane,mainFrame,camera);
 		
 		mainFrame.getContentPane().remove(0);
 		mainFrame.revalidate();

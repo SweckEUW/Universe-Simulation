@@ -54,37 +54,37 @@ public class UniverseUserInterface {
 			e.printStackTrace();
 		}
 		
-		addLeaveButton();
+		// addLeaveButton();
 		
 		this.camera = camera;
 		
-		planetDescriptionPanel = new JPanel();
-		planetDescriptionPanel.setPreferredSize(new Dimension(800, 220));
-		planetDescriptionPanel.setBounds(1920, 430, 800, 220);
-		planetDescriptionPanel.setBackground(Color.black);	
-		planetDescriptionPanel.setLayout(new BoxLayout(planetDescriptionPanel, BoxLayout.X_AXIS));
+		// planetDescriptionPanel = new JPanel();
+		// planetDescriptionPanel.setPreferredSize(new Dimension(800, 220));
+		// planetDescriptionPanel.setBounds(1920, 430, 800, 220);
+		// planetDescriptionPanel.setBackground(Color.black);	
+		// planetDescriptionPanel.setLayout(new BoxLayout(planetDescriptionPanel, BoxLayout.X_AXIS));
 		
-		leavePanel = new JPanel();
-		leavePanel.setBounds(0, -50, 50, 50);
-		leavePanel.setBackground(Color.black);	
-		leavePanel.setLayout(new BoxLayout(leavePanel, BoxLayout.Y_AXIS));
+		// leavePanel = new JPanel();
+		// leavePanel.setBounds(0, -50, 50, 50);
+		// leavePanel.setBackground(Color.black);	
+		// leavePanel.setLayout(new BoxLayout(leavePanel, BoxLayout.Y_AXIS));
 			
-		mainPane.add(planetDescriptionPanel);	
-		mainPane.add(leavePanel);
+		// mainPane.add(planetDescriptionPanel);	
+		// mainPane.add(leavePanel);
 				
-		planetName = new JLabel("");
-		planetName.setFont(new Font("Arial", Font.PLAIN, 30));
-		planetName.setForeground(Color.white);
-		planetName.setBounds(1720, 10, 200, 40);
-		planetName.setAlignmentX(Component.LEFT_ALIGNMENT);
+		// planetName = new JLabel("");
+		// planetName.setFont(new Font("Arial", Font.PLAIN, 30));
+		// planetName.setForeground(Color.white);
+		// planetName.setBounds(1720, 10, 200, 40);
+		// planetName.setAlignmentX(Component.LEFT_ALIGNMENT);
 		
-		JPanel panelPlanetName = new JPanel(new FlowLayout(FlowLayout.LEFT));
-		panelPlanetName.setBounds(1720, 10, 200, 40);
-		panelPlanetName.add(planetName);
-		panelPlanetName.setBackground(Color.black);
-		panelPlanetName.setAlignmentX(Component.LEFT_ALIGNMENT);
+		// JPanel panelPlanetName = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		// panelPlanetName.setBounds(1720, 10, 200, 40);
+		// panelPlanetName.add(planetName);
+		// panelPlanetName.setBackground(Color.black);
+		// panelPlanetName.setAlignmentX(Component.LEFT_ALIGNMENT);
 		
-		mainPane.add(panelPlanetName);
+		// mainPane.add(panelPlanetName);
 	}
 	
 	private void addLeaveButton() {
